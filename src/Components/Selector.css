@@ -1,0 +1,47 @@
+.selectorContainer {
+  height: 80vh;
+  margin: auto;
+  margin-top: 6em;
+  width: 90%;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.08);
+  overflow-x: hidden;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  color: white;
+}
+.header p {
+  color: #747474;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 34em;
+  grid-row-gap: 0px;
+  color : white;
+}
+
+.leftDiv{
+    padding-left: 20px;
+}
+.rightDiv button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color : rgb(202, 224, 41);
+    padding-bottom : 1.4em;
+}
+.middleDiv{
+    padding-bottom : 1.4em;
+
+}
+.left   Div{
+    padding-bottom : 1.4em;
+
+}

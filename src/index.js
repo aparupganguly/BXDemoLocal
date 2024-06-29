@@ -10,6 +10,7 @@ import BoxSelection from "./Components/BoxSelection";
 import LoginPage from "./Components/LoginPage";
 import "./index.css";
 import App from "./App";
+import Selector from "./Components/Selector";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -24,6 +25,8 @@ root.render(
         <Route path="/hirer-explore" element={<HirerExplore />} />
         <Route path="/freelancer-explore" element={<FreelancerExplore />} />
         <Route path="/login" element={<LoginPage />} />
+
+
 
       </Routes>
     </Router>
