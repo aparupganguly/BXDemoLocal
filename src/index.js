@@ -10,6 +10,7 @@ import BoxSelection from "./Components/BoxSelection";
 import LoginPage from "./Components/LoginPage";
 import "./index.css";
 import App from "./App";
+import PostJob from "./Components/PostJob";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -24,7 +25,7 @@ root.render(
         <Route path="/hirer-explore" element={<HirerExplore />} />
         <Route path="/freelancer-explore" element={<FreelancerExplore />} />
         <Route path="/login" element={<LoginPage />} />
-
+        <Route path="/postjob" element={<PostJob />} />
       </Routes>
     </Router>
   </>
