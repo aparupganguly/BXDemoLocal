@@ -11,6 +11,7 @@ import LoginPage from "./Components/LoginPage";
 import "./index.css";
 import App from "./App";
 import Selector from "./Components/Selector";
+import PostJob from "./Components/PostJob";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -26,8 +27,8 @@ root.render(
         <Route path="/freelancer-explore" element={<FreelancerExplore />} />
         <Route path="/login" element={<LoginPage />} />
 
-
-
+        <Route path="/postjob" element={<PostJob />} />
+        <Route path="/selector" element={<Selector />} />
       </Routes>
     </Router>
   </>
