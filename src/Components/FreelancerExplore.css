@@ -17,7 +17,7 @@
 }
 .Feedcontainer {
   display: grid;
-  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-columns: 0.1fr 1.2fr;
   grid-template-rows: 1fr;
   gap: 0px 0%;
   grid-auto-flow: row;
@@ -51,7 +51,7 @@
   font-family: "Neue-medium";
   font-size: 20px;
 }
-.buttons {
+/* .buttons {
   width: 250px;
   height: 40px;
   border-radius: 20px;
@@ -62,7 +62,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 .button {
   background-color: #7ae27d; /* Green */
   border: none;

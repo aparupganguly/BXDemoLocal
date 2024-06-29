@@ -28,12 +28,12 @@ const FreelancerExplore = () => {
           <p>BountyX</p>
         </div>
         <div className="nav">
-          <p>Explore</p>
+          <p>You are viewing this page as Freelancer</p>
           <p>Dashboard</p>
         </div>
       </div>
       <div class="Feedcontainer">
-        <div className="buttons">Post Gig</div>
+        <div className="buttons"></div>
         <div className="Cards">
           <div className="card">
             {/* <img src={img1} alt="" /> */}
