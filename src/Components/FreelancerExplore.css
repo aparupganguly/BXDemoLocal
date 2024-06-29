@@ -1,0 +1,27 @@
+.freelancerExploreContainer {
+  color: #fff;
+}
+.nav {
+  display: flex;
+  gap: 50px;
+  padding-top: 10px;
+}
+.logo {
+  font-size: 25px;
+}
+.freelancerExploreHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.Feedcontainer {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0%;
+  grid-auto-flow: row;
+  grid-template-areas: ". .";
+}
+.Cards{
+    
+}

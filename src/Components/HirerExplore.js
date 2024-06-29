@@ -1,7 +1,7 @@
 import React from "react";
 
 const HirerExplore = () => {
-  return <div>HirerExplore</div>;
+  return <div></div>;
 };
 
 export default HirerExplore;

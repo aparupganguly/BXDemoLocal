@@ -98,7 +98,7 @@ const BoxSelection = () => {
           <input type="email" placeholder="Email" required />
           <input type="password" placeholder="Password" required />
           <div className="spanContainer">
-            <span>Don't have an account?</span>
+            <span>Don't have an account</span>
             <span>SIGN UP</span>
           </div>
         </div>
