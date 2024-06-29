@@ -5,7 +5,7 @@
   display: flex;
   gap: 20em;
   padding-top: 10px;
-  margin-bottom : 50px; 
+  margin-bottom: 50px;
 }
 .logo {
   font-size: 25px;
@@ -56,10 +56,53 @@
   height: 40px;
   border-radius: 20px;
   border: 2px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.34); 
+  background: rgba(255, 255, 255, 0.34);
   text-align: center;
   font-size: 15px;
-  display : flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+.button {
+  background-color: #7ae27d; /* Green */
+  border: none;
+  color: white;
+  border-radius: 50px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #55bd5a;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #75b1d9;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden {
+  display: none;
 }

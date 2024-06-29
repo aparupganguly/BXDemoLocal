@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./FreelancerExplore.css";
 
 // import img1 from "../assets/images/img1.png";
@@ -9,6 +9,18 @@ import "./FreelancerExplore.css";
 // import img6 from "../assets/images/img6.png";
 
 const FreelancerExplore = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [isApplied, setIsApplied] = useState(false);
+
+  const handleClick = () => {
+    setIsLoading(true);
+    // Simulate an API call
+    setTimeout(() => {
+      setIsLoading(false);
+      setIsApplied(true);
+    }, 2000); // Simulate a 2-second loading time
+  };
+
   return (
     <div className="freelancerExploreContainer">
       <div className="freelancerExploreHeader">
@@ -21,15 +33,28 @@ const FreelancerExplore = () => {
         </div>
       </div>
       <div class="Feedcontainer">
-        <div className="buttons">
-          Post Gig
-        </div>
+        <div className="buttons">Post Gig</div>
         <div className="Cards">
           <div className="card">
             {/* <img src={img1} alt="" /> */}
             <p>Looking for Modern and Trendy Designer</p>
             <p style={{ fontSize: "15px" }}>User Name</p>
             <p style={{ fontSize: "18px" }}> 5 ETH</p>
+            <div>
+              <button
+                className="button"
+                onClick={handleClick}
+                disabled={isApplied}
+              >
+                {isApplied ? "Applied" : "Apply"}
+                {isLoading && <span className="loader"></span>}
+              </button>
+              {isApplied && (
+                <p style={{ fontSize: "11px" }}>
+                  Thank you for applying! The lister may get back to you soon.
+                </p>
+              )}
+            </div>
           </div>
           <div className="card">Card 2</div>
           <div className="card">Card 3</div>
